@@ -1,0 +1,76 @@
+.smarket-na {
+	direction: rtl;
+	text-align: right;
+}
+
+
+.s-container {
+	margin-top: 57px !important;
+}
+
+
+.s-footer {
+	height: 200px;
+!important;
+	width: 100%;
+	background-color: #0c5460;
+}
+
+
+.ul-margin-right {
+	margin-left: auto !important;
+	margin-right: 0 !important;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+
+.s-app-group {
+	margin-top: 20px;
+	width: 100%;
+	height: 350px;
+	border: 1px solid #0f6674;
+	text-align: right;
+}
+
+.s-app-panel {
+	padding: 20px;
+	width: 150px;
+	height: 300px;
+	display: inline-block;
+	background-color: #e1defc;
+	vertical-align: top;
+}
+
+.s-app-icon {
+	width: 80px;
+	height: 80px;
+	display: block;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.s-app-name {
+	margin: auto;
+	text-align: center;
+}
+.s-app-price
+{
+	margin-top: 5px;
+	text-align: center;
+	font-size: 8pt;
+	color: #a0a0a0;
+}
