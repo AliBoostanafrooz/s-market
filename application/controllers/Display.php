@@ -25,7 +25,7 @@ class Display extends CI_Controller
 	{
 		$this->load->model('Display_model', '', TRUE);
 
-		$data['app_info'] = $this->Display_mopdel->get_one_app_byid($app_id)->result();
+		$data['app_info'] = $this->Display_model->get_one_app_byid($app_id)->result();
 		$this->load->view('share/header');
 		$this->load->view('display/app', $data);
 		$this->load->view('share/footer');
