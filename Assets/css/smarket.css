@@ -36,11 +36,11 @@
 
 
 .s-app-group {
-	margin-top: 20px;
 	width: 100%;
-	height: 350px;
+	height: 360px;
 	border: 1px solid #0f6674;
 	text-align: right;
+	padding: 10px;
 }
 
 .s-app-panel {
@@ -67,10 +67,15 @@
 	margin: auto;
 	text-align: center;
 }
-.s-app-price
-{
+
+.s-app-price {
 	margin-top: 5px;
 	text-align: center;
 	font-size: 8pt;
 	color: #a0a0a0;
+}
+
+.s-app-group-title {
+	height: 30px;
+
 }

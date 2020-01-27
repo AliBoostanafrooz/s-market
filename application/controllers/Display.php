@@ -8,9 +8,9 @@ class Display extends CI_Controller
 		$this->load->model('Display_model', '', TRUE);
 
 		$data['applications'] = $this->Display_model->load_all_applications()->result();
-		$data['best_new_apps'] = $this->Diplay_model->get_best_new_apps()->result();
-		$data['best_new_games'] = $this->Diplay_model->get_best_new_games()->result();
-		$data['best_new_updates'] = $this->Diplay_model->get_best_new_updates()->result();
+		$data['best_new_apps'] = $this->Display_model->get_best_new_apps()->result();
+		$data['best_new_games'] = $this->Display_model->get_best_new_games()->result();
+		$data['best_new_updates'] = $this->Display_model->get_best_new_updates()->result();
 
 
 		//Load View
@@ -23,8 +23,11 @@ class Display extends CI_Controller
 
 	public function app($app_id = null)
 	{
+		$this->load->model('Display_model', '', TRUE);
+
+		$data['app_info'] = $this->Display_mopdel->get_one_app_byid($app_id)->result();
 		$this->load->view('share/header');
-		$this->load->view('display/app');
+		$this->load->view('display/app', $data);
 		$this->load->view('share/footer');
 
 	}

@@ -1,1 +1,1 @@
-this is one app detail
+<?php print_r($app_info [0]->name); ?>
