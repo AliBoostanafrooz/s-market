@@ -17,7 +17,6 @@ class Display extends CI_Controller
 		$this->load->view('share/header');
 		$this->load->view('display/all', $data);
 		$this->load->view('share/footer');
-
 	}
 
 
@@ -29,7 +28,6 @@ class Display extends CI_Controller
 		$this->load->view('share/header');
 		$this->load->view('display/app', $data);
 		$this->load->view('share/footer');
-
 	}
 
 	public function about()

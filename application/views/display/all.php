@@ -1,11 +1,9 @@
 <div class="s-app-group">
 	<div class="s-app-group-title"> برنامه های جدید برگزیده</div>
 	<?php
-	foreach ($best_new_apps
-
-			 as $app) { ?>
+	foreach ($best_new_apps as $app) { ?>
 		<div class="s-app-panel">
-			<a href='<?php echo base_url("index.php/display/app/$app->id"); ?>'>
+			<a href='<?php echo base_url("display/app/$app->id"); ?>' class="s-app-link">
 				<img src=" <?php echo base_url('Assets/img/apps/icon/icon.svg') ?>" class="s-app-icon"/>
 				<div class="s-app-name"> <?php echo $app->name; ?> </div>
 
@@ -29,7 +27,7 @@
 	<?php
 	foreach ($best_new_games as $game) { ?>
 		<div class="s-app-panel">
-			<a href='<?php echo base_url("index.php/display/app/$app->id"); ?>'>
+			<a href='<?php echo base_url("display/app/$app->id"); ?>'class="s-app-link">
 				<img src=" <?php echo base_url('Assets/img/apps/icon/icon.svg') ?>" class="s-app-icon"/>
 				<div class="s-app-name"> <?php echo $game->name; ?> </div>
 
@@ -54,7 +52,7 @@
 	<?php
 	foreach ($best_new_updates as $update) { ?>
 		<div class="s-app-panel">
-			<a href='<?php echo base_url("index.php/display/app/$app->id"); ?>'>
+			<a href='<?php echo base_url("display/app/$app->id"); ?>'class="s-app-link">
 				<img src=" <?php echo base_url('Assets/img/apps/icon/icon.svg') ?>" class="s-app-icon"/>
 				<div class="s-app-name"> <?php echo $update->name; ?> </div>
 

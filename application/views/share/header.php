@@ -11,14 +11,14 @@
 	<link href="<?php echo base_url('Assets/css/bootstrap-reboot.css'); ?>" rel="stylesheet"/>
 	<link href="<?php echo base_url('Assets/css/smarket.css'); ?>" rel="stylesheet" />
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 	<script src="<?php echo base_url('Assets/js/bootstrap.js'); ?>"></script>
-	<script src="<?php echo base_url('Assets/js/bootstrap.bundle.js'); ?>"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	<script; src="<?php echo base_url('Assets/js/bootstrap.bundle.js'); ?>"></script>
+
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 			crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	<script; src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js";
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q";
 			crossorigin="anonymous"></script>
 
 
@@ -38,7 +38,7 @@
 				<a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="<?php echo base_url('index.php/display/about'); ?>">درباره ما</a>
+				<a class="nav-link" href="<?php echo base_url('display/about'); ?>">درباره ما</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">دانلود</a>
@@ -46,8 +46,17 @@
 		</ul>
 		<form class="form-inline my-2 my-lg-0">
 			<input class="form-control mr-sm-2" type="search" placeholder="جستجو" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">جستجو</button>
 		</form>
+
+        <div class="dropdown ">
+            <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                ورود
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="<?php echo base_url('user/login'); ?>"> ورود کاربر</a>
+                <a class="dropdown-item" href="<?php echo base_url('developer/login'); ?>">ورود توسعه دهنده</a>
+            </div>
+        </div>
 	</div>
 </nav>
 

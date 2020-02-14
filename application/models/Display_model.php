@@ -12,25 +12,25 @@ class Display_model extends CI_Model
 
 	public function get_best_new_apps()
 	{
-		$this->db->limit(3);
+//		$this->db->limit(3);
 		$this->db->where('isgame', 0);
-		$this->db->order_by('create_date');
+		$this->db->order_by('create_at');
 		$r = $this->db->get('applications');
 		return $r;
 	}
 
 	public function get_best_new_games()
 	{
-		$this->db->limit(3);
+//		$this->db->limit(3);
 		$this->db->where('isgame', 1);
-		$this->db->order_by('create_date');
+		$this->db->order_by('create_at ');
 		$r = $this->db->get('applications');
 		return $r;
 	}
 
 	public function get_best_new_updates()
 	{
-		$this->db->limit(3);
+//		$this->db->limit(3);
 		$this->db->order_by('update_at');
 		$r = $this->db->get('applications');
 		return $r;
