@@ -11,15 +11,10 @@
 	<link href="<?php echo base_url('Assets/css/bootstrap-reboot.css'); ?>" rel="stylesheet"/>
 	<link href="<?php echo base_url('Assets/css/smarket.css'); ?>" rel="stylesheet" />
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-	<script src="<?php echo base_url('Assets/js/bootstrap.js'); ?>"></script>
-	<script; src="<?php echo base_url('Assets/js/bootstrap.bundle.js'); ?>"></script>
-
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-			crossorigin="anonymous"></script>
-	<script; src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js";
-			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q";
-			crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="<?php echo base_url('Assets/js/bootstrap.js'); ?>"> </script>
+    <script src="<?php echo base_url('Assets/js/bootstrap.bundle.js'); ?>"> </script>
 
 
 </head>
@@ -52,6 +47,7 @@
             <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 ورود
             </button>
+
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <a class="dropdown-item" href="<?php echo base_url('user/login'); ?>"> ورود کاربر</a>
                 <a class="dropdown-item" href="<?php echo base_url('developer/login'); ?>">ورود توسعه دهنده</a>
@@ -59,8 +55,5 @@
         </div>
 	</div>
 </nav>
-
-
 <div class="container s-container">
-
 
