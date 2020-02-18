@@ -1,7 +1,7 @@
 <?php
 
 
-class Developer_model extends CI_Model
+class developer_model extends CI_Model
 {
 
     public function login($emailphone, $password)
@@ -23,5 +23,17 @@ class Developer_model extends CI_Model
         }
     }
 
+    public function register($email, $phone, $password, $nationalcode)
+    {
+        $developer_array = array('email'=>$email, 'phone'=>$phone, "password"=>$password, "national_code"=>$nationalcode);
+
+        if($this->db->insert('developers',$developer_array))
+        {
+            return true;
+        }else
+        {
+            return false;
+        }
+    }
 
 }
